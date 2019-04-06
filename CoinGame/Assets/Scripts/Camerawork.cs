@@ -10,6 +10,20 @@ public class Camerawork : MonoBehaviour
     void Start()
     {
         ball = GameObject.Find("Ball");
+
+        GameObject[] coins = GameObject.FindGameObjectsWithTag("Coin");
+        
+        
+        // int [] numbers = {2,4,6,8};
+
+        for(int i =0; i < coins.Length; i++)
+        {
+            Debug.Log(coins[i].name);
+
+        }
+
+
+        // Debug.Log(coins[4].name);
     }
 
     // Update is called once per frame
