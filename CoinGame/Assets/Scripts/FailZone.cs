@@ -14,7 +14,11 @@ public class FailZone : MonoBehaviour
         {
             // 게임 다시 시작
             
-            Application.LoadLevel("Game");
+            // GameObject.Find("GameManager").SendMessage("RestartGame");
+            // GameObject gm = GameObject.Find("GameManager");
+            // GameManager gmComponent = gm.GetComponent<GameManager>();
+            GameManager gmComponent = GameObject.Find("GameManager").GetComponent<GameManager>();
+            gmComponent.RestartGame();
 
         }
     }
@@ -26,6 +30,10 @@ public class FailZone : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+        
+        // GameManager gmComponent = GameObject.Find("GameManager").GetComponent<GameManager>();
+        // Debug.Log(gmComponent.coinCount);
+
         
     }
 }

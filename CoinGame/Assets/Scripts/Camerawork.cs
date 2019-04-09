@@ -4,12 +4,12 @@ using UnityEngine;
 
 public class Camerawork : MonoBehaviour
 {
-    GameObject ball;
+    public GameObject ball;
 
     // Start is called before the first frame update
     void Start()
     {
-        ball = GameObject.Find("Ball");
+        // ball = GameObject.Find("Ball");
 
         GameObject[] coins = GameObject.FindGameObjectsWithTag("Coin");
         
@@ -18,7 +18,7 @@ public class Camerawork : MonoBehaviour
 
         for(int i =0; i < coins.Length; i++)
         {
-            Debug.Log(coins[i].name);
+           //  Debug.Log(coins[i].name);
 
         }
 

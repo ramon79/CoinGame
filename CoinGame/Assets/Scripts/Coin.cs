@@ -11,6 +11,7 @@ public class Coin : MonoBehaviour
 
         if(col.gameObject.name == "Ball")
         {
+            GameObject.Find("GameManager").SendMessage("GetCoin");
             Destroy(gameObject);
         }
     }
