@@ -1130,7 +1130,7 @@ GameObject:
   - component: {fileID: 1152497727}
   - component: {fileID: 1152497726}
   m_Layer: 0
-  m_Name: Obstacle
+  m_Name: shooter
   m_TagString: Obstacles
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1145,9 +1145,10 @@ MonoBehaviour:
   m_GameObject: {fileID: 1152497725}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 2c5fe84b8ddca264fbcce7235f459ad9, type: 3}
+  m_Script: {fileID: 11500000, guid: ef0d1f03c3bd17443a2a294e8ea51ae0, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  stone: {fileID: 7935493487479742634, guid: e270f885109d0e240a7331016a4ba1d9, type: 3}
 --- !u!136 &1152497727
 CapsuleCollider:
   m_ObjectHideFlags: 0
@@ -1179,7 +1180,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 10303, guid: 0000000000000000f000000000000000, type: 0}
+  - {fileID: 2100000, guid: 934d548731c667246b93cb0cda15e49e, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -1759,7 +1760,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &2046791525
 Transform:
   m_ObjectHideFlags: 0

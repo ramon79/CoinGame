@@ -2,8 +2,10 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class Obstacle : MonoBehaviour
+public class Shooter : MonoBehaviour
 {
+
+    public GameObject stone;
 
     //두 물체간에 충돌이 발생한 경우
     void OnCollisionEnter(Collision collision)
@@ -39,10 +41,21 @@ public class Obstacle : MonoBehaviour
     }
 
     // Update is called once per frame
+
+    float timeCount = 0;
     void Update()
     {
 
         // TestMethod("Ball", 0);
+
+        timeCount +=Time.deltaTime;
+        if(timeCount > 3)
+        {
+            // Debug.Log("볼을 던져라");
+
+            Instantiate(stone, transform.position, Quaternion.identity);
+            timeCount = 0;
+        }
 
         float newXPosition = transform.localPosition.x + delta;
         transform.localPosition = new Vector3(newXPosition, transform.localPosition.y, transform.localPosition.z);

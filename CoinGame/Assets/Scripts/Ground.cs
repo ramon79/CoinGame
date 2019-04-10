@@ -18,6 +18,7 @@ public class Ground : MonoBehaviour
 
         // Debug.Log(Input.GetAxis("Horizontal"));
         transform.localEulerAngles = new Vector3(10, 0, zRotation);
+        
         if(Input.touchCount > 0 || Input.GetMouseButton(0))
         {
             Debug.Log("Mouse Down" + Input.mousePosition);

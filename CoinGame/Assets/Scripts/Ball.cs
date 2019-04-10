@@ -52,7 +52,7 @@ public class Ball : MonoBehaviour
         {
             if(shouldPrintOver20)
             {
-                Debug.Log("Over 20:" + distance);
+                //Debug.Log("Over 20:" + distance);
                 shouldPrintOver20 = false;
 
             }
